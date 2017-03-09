@@ -1,0 +1,33 @@
+let a=2**5; //32
+
+let b="wonderful".includes("butter");
+console.log(b);
+
+//This feature has been extended to arrays
+
+let b=[2,3,4,5,6].includes(7);
+console.log(b);
+
+more object manipulation
+
+let obj={a:'one',b:'two',c:'three'}
+
+let keys=Object.keys(obj);
+
+console.log(keys);
+
+let values=Object.values(obj);
+
+let values=Object.entries(obj);
+
+    ES7 released the new exponent operator which replaces Math.pow(x, y) with x ** y;
+
+    ES7 standardized the .includes() method for arrays which checks if an element exists within an array collection.
+
+    Object.values() returns an array of an object’s values as part of the new ES proposal to improve the Object prototype.
+
+    Object.entries() returns an array of an object’s keys and values as part of the new ES proposal to improve the Object prototype.
+
+    The async keyword introduces async functions in ecmascript and allow for more controlled flow of asynchronous functions.
+
+    The await keyword adds blocking to asynchronous functions in order to temporarily stop the execution of statements and logic until certain data finishes returning a response.

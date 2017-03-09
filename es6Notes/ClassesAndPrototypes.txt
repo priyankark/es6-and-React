@@ -1,0 +1,6 @@
+Classes relate to each other through inheritance
+Defined with class keyword and contructor function
+
+extends keyword creates child classes
+
+

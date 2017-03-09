@@ -1,0 +1,6 @@
+A transpiler reads code written in one language and produces equivalent code in another. Example: Babel
+
+Benefits of webpack
+1) bundles modules into one .js pack
+2)comes with a dev server
+

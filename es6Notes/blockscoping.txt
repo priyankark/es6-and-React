@@ -1,0 +1,13 @@
+let limit=200;
+console.log(limit);
+
+{
+let limit=10;
+console.log('backstage limit',limit);
+
+}
+
+console.log('overall venue limit:',limit);
+
+Even const allows block scoping.
+

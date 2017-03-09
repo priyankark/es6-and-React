@@ -1,0 +1,103 @@
+Break the typical run to completion model for functions
+
+Generators can pause and resume with yield and next
+
+function* letterMaker(){
+	yield 'a';
+	yield 'b';
+	yield 'c';
+}
+
+let letterGen=letterMaker();
+
+console.log(letterGen.next().value);
+console.log(letterGen.next().value);
+console.log(letterGen.next().value);
+console.log(letterGen.next().value);
+
+
+function* countMaker(){
+let count=0;
+while(count<3)
+yield count+=1;
+}
+
+let countGen=countMaker();
+console.log(countGen.next().value);
+console.log(countGen.next().value);
+console.log(countGen.next().value);
+console.log(countGen.next().value);
+
+Controlling flow with generators
+
+function* evens() {
+let count=0;
+while(true)
+{
+count+=2;
+yield count;
+}
+}
+
+let sequence=evens();
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+
+Whatever we pass as paramter to next function can set the state 
+
+function* evens(){
+	let count=0;
+while(true){
+count+=2;
+let reset=yield count;
+if(reset){
+count=0;
+}
+}
+}
+let sequence=evens();
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next(true).value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+
+2 4 6 2 4 6
+
+const arrayIterator=(array)=>{
+let index=0;
+
+return {
+
+next()=>{}
+}
+}
+
+
+function* arrayIterator(){
+yield *arguments;
+}
+
+var it=arrayIterator(1,2,3);
+
+console.log(it.next().value);
+
+
+k the typical “run to completion” model of normal functions and can start, pause, and reset.
+
+    Generators use the syntax of a normal function, but have an asterisk following the function keyword: function* generator { … } .
+
+    The generator yield keyword signals when to ‘pause’ the function and return its current state.
+
+    Generator instances don’t use the new keyword like the typical function prototype or Object.
+
+    Using the generator’s special next() method allows us to access its yielded state.
+
+    Passing values to the next() method introduces a way for generators to reset, or complete their runtime.
+
+    An iterator in JavaScript demonstrates a type of object that can access values in a collection one at a time.
+
+    A generatorcan provide a convenient and complex alternative to iterators.
+

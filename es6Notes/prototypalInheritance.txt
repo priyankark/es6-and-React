@@ -1,0 +1,24 @@
+Classes are extractions on top of JavaScript prototypes.
+
+A prototype reveals an object's parent.
+
+All objects- Arrays, Dates etc have a prototype.
+
+function Wizard(name,house,pet){
+
+this.name=name;
+this.house=house;
+this.pet=pet;
+
+this.greet=()=>`I'm ${this.name}...`
+
+}
+
+let harry=new Wizard("harry potere...")
+
+console.log(harry.greet());
+
+Wiazrd.prototype.pet_name;
+
+Need an actual function to create this for the prototype.
+

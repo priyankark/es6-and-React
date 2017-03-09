@@ -1,0 +1,13 @@
+let a='good';
+console.log(a);
+
+let greeting='good morning';
+console.log(greeting);
+
+use ${} 
+
+let greeting='${a} morning';
+
+console.log(greeting);
+
+

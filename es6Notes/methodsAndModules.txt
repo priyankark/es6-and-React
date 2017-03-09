@@ -1,0 +1,73 @@
+Arrow functions
+Pre-es6 syntax: function()
+
+By default arrow functions are anonymous
+
+The map method creates new arrays by calling a function on individual elements in an original array.
+
+The filter method creates new arrays based on an original array and a certain tset on each of its elements.
+
+Modules: split code into files
+export and import
+
+Arrow functions
+setTimeout(()=>{
+console.log("hello");
+},3000);
+
+let cheer=()=>{
+console.log("Arrow function");
+}
+
+Map and filter method
+let values=[20,30,40];
+
+let double=(n)=>{
+return n*2;
+}
+
+let doubled=values.map(double);
+console.log(doubled);
+
+let doubled=values.map((n)=>n*2);
+
+let points=[7,16,21,4,3,22,5];
+
+let highscore=points.filter((n)=>return n>15);
+
+Built in  helper methods
+
+String Manipulation
+
+String.repeat()
+
+Searching with startsWith,endsWith,includes and more
+
+Number checking functions
+
+Examples
+let b="wooh"+"oo".repeat(50);
+
+console.log("butterfly".startsWith("butter"));
+
+console.log("butterfly".endsWith("fly"));
+
+console.log("butterfly".includes("caterpillar"));
+
+const addToCart=(item,number)=>{
+return Number.isFinite(number);
+}
+
+console.log(AddToCart('shirt',Infinity));
+
+isSafeInteger
+
+
+Modules
+
+export { whatever };
+
+import {whatever} from './wherever';
+
+Default
+

@@ -1,0 +1,32 @@
+Synchronous and Aynchronous Programming
+
+Synchronous programs run in sequence without blocking.
+
+Asynchronous divert blocking to event handlers
+
+Users and browsers handle events asynchronously.
+
+Promises handle asynchronous functions in es6
+
+It exists in 3 states pending fulfilled rejected
+
+Promises
+
+let p=new Promise((resolve,reject)=>{
+	resolve('Resolved promise data');
+});
+
+p.then(response=>console.log(response));
+
+let p=new Promise((resolve,reject)=>{
+        reject('Resolved promise data');
+});
+
+p.then(response=>console.log(response));
+
+.catch(error=>console.log(error));
+
+console.log('after promise');
+
+
+

@@ -1,0 +1,35 @@
+Assignment in es6
+
+Old syntax
+var limit=100;
+
+in es6
+let limit=100;
+
+const limit=100 means you can't update later
+
+Block scoping in Es6
+
+Template literal 
+Srings with embedded expressions
+
+Example:
+let insert='world'
+'Hello, ${insert}...'
+
+Eases updating strings and concatenation.
+
+let limit=100;
+console.log(limit);
+
+const email=['val1','val2','val3'];
+
+console.log(email);
+
+email[0]='val5';
+console.log(email);
+
+
+//email=[] won't work
+
+
